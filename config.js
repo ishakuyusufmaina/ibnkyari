@@ -1,2 +1,2 @@
-const schoolId = "kauna";
-const schoolName = "KAUNA PRIVATE SCHOOL";
+const schoolId = "ibnkyari";
+const schoolName = "IBN KYARI ISLAMIC NUR., PRI. AND SEC. SCHOOL";
