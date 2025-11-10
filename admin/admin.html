@@ -4,8 +4,8 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="/config.js"></script>
- <script src="/batch2.js"></script>
+ <script src="../config.js"></script>
+ <script src="../batch2.js"></script>
 
   <title>School Admin</title>
 <style>
@@ -500,7 +500,7 @@ adminFunctions.forEach(fx=>{
     
     let authData = authDoc.exists()? authDoc.data()[user.email] : {}
     let c = authData? authData.code : "no code";
-    code.textContent = c;
+    if (code) code.textContent = c;
     
     let id = user.email.replace(/@.*/, "");
     let teachers = teachersDoc.data();
